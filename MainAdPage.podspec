@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
                   It is a MainAdPage view used on iOS, which implement by Objective-C.
                    DESC
 
-  s.homepage     = "https://github.com/asphg/MainAdPage.git/"
+  s.homepage     = "https://github.com/asphg/MainAdPage"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
