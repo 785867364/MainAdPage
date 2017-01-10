@@ -13,6 +13,9 @@
 		1F6323E51E233343003D069A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6323E31E233343003D069A /* Main.storyboard */; };
 		1F6323E71E233343003D069A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6323E61E233343003D069A /* Assets.xcassets */; };
 		1F6323EA1E233343003D069A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6323E81E233343003D069A /* LaunchScreen.storyboard */; };
+		1F8C78341E2392C100476269 /* VersionUpgradeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C78321E2392C100476269 /* VersionUpgradeAlertView.m */; };
+		1F8C78351E2392C100476269 /* VersionUpgradeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8C78331E2392C100476269 /* VersionUpgradeAlertView.xib */; };
+		1F8C78391E23940200476269 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C78381E23940200476269 /* NSString+Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		1F6323E61E233343003D069A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F6323E91E233343003D069A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F6323EB1E233343003D069A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8C78311E2392C100476269 /* VersionUpgradeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionUpgradeAlertView.h; sourceTree = "<group>"; };
+		1F8C78321E2392C100476269 /* VersionUpgradeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionUpgradeAlertView.m; sourceTree = "<group>"; };
+		1F8C78331E2392C100476269 /* VersionUpgradeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VersionUpgradeAlertView.xib; sourceTree = "<group>"; };
+		1F8C78371E23940200476269 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		1F8C78381E23940200476269 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 				1F6323DE1E233343003D069A /* AppDelegate.m */,
 				1F6323E01E233343003D069A /* ViewController.h */,
 				1F6323E11E233343003D069A /* ViewController.m */,
+				1F8C78311E2392C100476269 /* VersionUpgradeAlertView.h */,
+				1F8C78321E2392C100476269 /* VersionUpgradeAlertView.m */,
+				1F8C78331E2392C100476269 /* VersionUpgradeAlertView.xib */,
+				1F8C78361E2393F400476269 /* Category */,
 				1F6323E31E233343003D069A /* Main.storyboard */,
 				1F6323E61E233343003D069A /* Assets.xcassets */,
 				1F6323E81E233343003D069A /* LaunchScreen.storyboard */,
@@ -77,6 +89,15 @@
 				1F6323DB1E233343003D069A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F8C78361E2393F400476269 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1F8C78371E23940200476269 /* NSString+Utility.h */,
+				1F8C78381E23940200476269 /* NSString+Utility.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6323EA1E233343003D069A /* LaunchScreen.storyboard in Resources */,
+				1F8C78351E2392C100476269 /* VersionUpgradeAlertView.xib in Resources */,
 				1F6323E71E233343003D069A /* Assets.xcassets in Resources */,
 				1F6323E51E233343003D069A /* Main.storyboard in Resources */,
 			);
@@ -151,7 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6323E21E233343003D069A /* ViewController.m in Sources */,
+				1F8C78341E2392C100476269 /* VersionUpgradeAlertView.m in Sources */,
 				1F6323DF1E233343003D069A /* AppDelegate.m in Sources */,
+				1F8C78391E23940200476269 /* NSString+Utility.m in Sources */,
 				1F6323DC1E233343003D069A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -259,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -307,6 +331,7 @@
 				1F6323F01E233343003D069A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

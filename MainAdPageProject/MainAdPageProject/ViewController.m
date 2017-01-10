@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "VersionUpgradeAlertView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    UIButton *showUpgradeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    showUpgradeBtn.frame = CGRectMake(100,
+                                      100,
+                                      100,
+                                      100);
+    showUpgradeBtn.backgroundColor = [UIColor redColor];
+    [showUpgradeBtn setTitle:@"更新"
+                    forState:UIControlStateNormal];
+    [showUpgradeBtn addTarget:self
+                       action:@selector(showUpgradeAlertView)
+             forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:showUpgradeBtn];
+}
+
+-(void)showUpgradeAlertView
+{
+    
+    //show upgrade alert
+    
+    VersionUpgradeAlertView *versionUpgradeAlert = [VersionUpgradeAlertView shareUpgradeAlertView];
+    
+    [versionUpgradeAlert showUpgradeAlertWithAlertMsg:@"更新提示!更新提示!更新提示!"
+                                      andForceUpgrade:NO];
+    
 }
 
 
